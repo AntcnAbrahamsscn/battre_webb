@@ -37,8 +37,8 @@ li {
     color: #fff;
 }
 
-h1,
-h3 {
+h1
+ {
     font-size: 3em;
     font-weight: bold;
     margin: 0;
@@ -47,8 +47,9 @@ h3 {
 h2 {
     font-size: 2em;
 }
-h4 {
-    font-size: 1.1em;
+h3 {
+    font-size: 1em;
+    font-weight: bold;
 }
 
 /* Base styles */
@@ -77,8 +78,8 @@ html {
 
 /* Mobile version */
 .front-page {
-    /* background-image: linear-gradient(to bottom right, #0A1128, #034078); */
-    background-image: url(assets/background/w9.jpg);
+    background-image: linear-gradient(to bottom right, #0A1128, #034078);
+    /* background-image: url(assets/background/w9.jpg); */
     /* background-size: 100%; */
     background-position: 40%;
 }
@@ -194,12 +195,79 @@ html {
 }
 
 .booking-page-container {
-    height: 600px;
     grid-column: 1/13;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.3);
     border-radius: 10px;
     margin-bottom: 90px;
+    padding: 40px 0;
 }
+
+.booking-page h3 {
+    text-align: center;
+}
+
+
+.choice-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 35px;
+}
+
+
+.choice-item {
+    flex-direction: column;
+    display: flex;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    padding: 0 25px;
+}
+.booking-page button {
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.booking-page label {
+    color:white;
+}
+
+.booking-page input {
+    border-radius: 50px;
+    border: white;
+    /* padding: 5px 128px 5px 10px; */
+    padding: 5px 5px 5px 10px;
+    flex-grow: 1;
+}
+
+
+
+
+.input-valid {
+    height: 26px;
+    border-radius: 50px;
+    margin: 5px 0;
+    background-image: linear-gradient(to right, #000000,#000000,#000000,#000000,#000000,#000000,#000000, #037838);
+    display: flex;
+}
+
+
+
+
+.input-valid input:valid {
+    margin-right: 10px;
+}
+
+.booking-page p {
+    text-align: center;
+    font-size: 0.7em;
+}
+
+.form-end-text {
+    margin-top: 20px;
+}
+
 
 .faq-page h2 {
     font-weight: bolder;
