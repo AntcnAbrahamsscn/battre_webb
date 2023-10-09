@@ -78,10 +78,10 @@ html {
 
 /* Mobile version */
 .front-page {
-    background-image: linear-gradient(to bottom right, #0A1128, #034078);
-    /* background-image: url(assets/background/w9.jpg); */
+    /* background-image: linear-gradient(to bottom right, #0A1128, #034078); */
+    background-image: url(assets/background/27532.jpg);
     /* background-size: 100%; */
-    background-position: 40%;
+    /* background-position: 40%; */
 }
 
 
@@ -153,6 +153,11 @@ html {
     margin-bottom: 0;
     margin-top: 50px;
 }
+.schema-page > p {
+    margin-bottom: 10px;
+    font-weight: 600;
+    margin-top: 25px;
+}
 
 .schema-page h2, .schema-page p, .faq-page h2, .faq-page p {
     grid-column: span 12;
@@ -160,31 +165,44 @@ html {
     color: #101c43;
 }
 
+
 .schedule-item p {
     color: #fff;
-    padding: 10px;
+    text-align: inherit;
+}
+.schedule-item .schedule-item-img-text p {
+font-size: 0.7em;
+text-align: center;
 }
 
 .schedule-item {
-    grid-column: span 6;
+    grid-column: span 12;
     /* border: #D81E5B 2px solid; */
     border-radius: 4px;
-    background-image: linear-gradient(to bottom, #101c43, #034078);
+    background-image: linear-gradient(to bottom right, #101a3c, #034078);
     /* background-image: url(assets/background/background-fp.jpg); */
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 13px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.4);
+    gap: 15px;
+
 
 
 }
 
-.schedule-item img {
-    margin: 10px;
+.schedule-item-img-text img{
+    max-width: 110px;
+    margin-bottom: 10px;
 }
 
 .booking-page {
     background-image: linear-gradient(to bottom right, #0A1128, #034078);
     margin-top: 80px;
-    /* background-image: url(assets/background/background-fp.jpg);  */
+    /* background-image: url(assets/background/27532.jpg);  */
+    background-position: 40%;
 }
 
 .booking-page h2{
@@ -196,10 +214,11 @@ html {
 
 .booking-page-container {
     grid-column: 1/13;
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(255, 255, 255, 0.2);
     border-radius: 10px;
     margin-bottom: 90px;
     padding: 40px 0;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 }
 
 .booking-page h3 {
@@ -256,7 +275,7 @@ html {
 
 
 .input-valid input:valid {
-    margin-right: 10px;
+    margin-right: 15px;
 }
 
 .booking-page p {
@@ -275,7 +294,7 @@ html {
 }
 
 .faq-page p {
-    padding-bottom: 60px;
+    padding-bottom: 20px;
 }
 .faq-page img {
 grid-column: 1/13;
@@ -283,7 +302,9 @@ width: 100%;
 padding-top: 60px;}
 
 .footer {
-    background-image: linear-gradient(to top right, #0A1128, #034078);
+    /* background-image: linear-gradient(to top right, #0A1128, #034078); */
+background-image: url(assets/background/27532.jpg);
+margin-top: 40px;
 }
 
 .footer p:first-child {
