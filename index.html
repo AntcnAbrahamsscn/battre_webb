@@ -21,29 +21,24 @@
                     alt="logo of bättre webb"
                 />
                 <ul>
-                    <li><a href="#schema">Schema</a></li>
-                    <li><a href="#booking">Bokning</a></li>
+                    <li><a href="#schema">SCHEMA</a></li>
+                    <li><a href="#booking">BOKNING</a></li>
                     <li><a href="#faq">FAQ</a></li>
                 </ul>
-                <div class="nav-symbol">
-                    <img
-                        src="assets/Logos_and_symbols/linkedin_logo.png"
-                        alt="logo of linkedin"
-                    />
-                    <img
-                        class="nav-symbol"
-                        src="assets/Logos_and_symbols/facebook-logo.png"
-                        alt="logo of facebook"
-                    />
+                <div class="nav-button-hidden">
+                    <a href="#booking" class="button">BOKA</a>
                 </div>
             </nav>
+
             <section class="front-page-text grid">
                 <h1>Upptäck Framtidens Webbdesign på Bättre Webb</h1>
-                <a href="#booking" class="button">Boka nu</a>
+                <div class="button-hidden">
+                    <a href="#booking" class="button">Boka</a>
+                </div>
             </section>
         </div>
         <div class="schema-page grid" id="schema">
-            <h2>Schema</h2>
+            <h2>SCHEMA</h2>
             <p>Fredag 18 oktober</p>
             <div class="schedule-item">
                 <div class="schedule-item-img-text">
@@ -223,16 +218,17 @@
                         src="assets/profiles/company-img-2.png"
                         alt="picture of conference profile"
                     />
-                    <p>15.30-18.00</p>
-                    <p>Stora salen</p>
+                    <p>Tid: 15.30-18.00</p>
+                    <p>Plats: Stora salen</p>
+                    <p>Talare: Sam Smith</p>
                 </div>
             </div>
         </div>
         <div class="booking-page grid" id="booking">
-            <h2>Bokning</h2>
+            <h2>BOKNING</h2>
             <section class="booking-page-container">
                 <form action="" class="form-container">
-                    <h3>VÄLJ BILJETT</h3>
+                    <h3>Välj biljett</h3>
                     <div class="choice-container">
                         <div class="choice-item">
                             <input
@@ -267,7 +263,7 @@
                             <label for="food-choice-4">Söndag</label>
                         </div>
                     </div>
-                    <h3>VÄLJ MAT</h3>
+                    <h3>Välj mat</h3>
                     <div class="choice-container">
                         <div class="choice-item">
                             <input
@@ -302,8 +298,18 @@
                             <label for="food-choice-3">Thai</label>
                         </div>
                     </div>
-                    <h3>PERSONUPPGIFTER</h3>
-
+                    <div class="input-valid">
+                        <input
+                            id="first"
+                            type="text"
+                            required
+                            placeholder="Allergier"
+                            value=""
+                            pattern="[a-zA-Z]+"
+                            title="Skriv in ditt namn utan siffror eller tecken."
+                        />
+                    </div>
+                    <h3>Personuppgifter</h3>
                     <div class="input-valid">
                         <input
                             id="first"
@@ -360,23 +366,29 @@
             </section>
         </div>
         <div class="faq-page grid" id="faq">
-            <img
-                src="assets/Logos_and_symbols/battre-webb-logo-2.png"
-                alt="picture of bw-company"
-            />
-            <h2>FAQ</h2>
-            <p>
-                Bättre Webb Expo är en årlig, spännande frontend-mässa som
-                samlar experter, innovatörer och entusiaster inom webbutveckling
-                för att utforska det senaste inom branschen och dela insikter om
-                hur man skapar en bättre webb.
-            </p>
-            <p>
-                Mässans främsta syfte är att inspirera och främja framsteg inom
-                frontend-utveckling och användarupplevelse. Den skapar en
-                plattform där yrkesverksamma och entusiaster kan nätverka, lära
-                sig av varandra och utforska de senaste tekniska framstegen.
-            </p>
+            <div class="faq-flex-container">
+                <img
+                    src="assets/Logos_and_symbols/anton-profile-circle.png"
+                    alt="picture of bw-company"
+                />
+                <section class="faq-text">
+                    <h2>FAQ</h2>
+                    <p>
+                        Bättre Webb Expo är en årlig, spännande frontend-mässa
+                        som samlar experter, innovatörer och entusiaster inom
+                        webbutveckling för att utforska det senaste inom
+                        branschen och dela insikter om hur man skapar en bättre
+                        webb.
+                    </p>
+                    <p>
+                        Mässans främsta syfte är att inspirera och främja
+                        framsteg inom frontend-utveckling och
+                        användarupplevelse. Den skapar en plattform där
+                        yrkesverksamma och entusiaster kan nätverka, lära sig av
+                        varandra och utforska de senaste tekniska framstegen.
+                    </p>
+                </section>
+            </div>
         </div>
         <div class="footer grid">
             <p>

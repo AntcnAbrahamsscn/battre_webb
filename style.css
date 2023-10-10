@@ -59,11 +59,12 @@ h3 {
     color: #fff;
     padding: 6px 12px;
     text-transform: uppercase;
-    border-radius: 50px;
+    border-radius: 5px;
     box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.4);
     display: inline-block;
     text-wrap: nowrap;
     text-align: center;
+    background-color: rgba(0, #fff, #fff, 0.3);
 }
 
 .button:hover {
@@ -78,10 +79,11 @@ html {
 
 /* Mobile version */
 .front-page {
-    background-image: linear-gradient(to bottom right, #0A1128, #034078);
-    /* background-image: url(assets/background/27532.jpg); */
-    /* background-size: 100%; */
+    /* background-image: linear-gradient(to bottom right, #0A1128, #034078); */
+    background-image: url(assets/background/27532.jpg);
+    /* background-size: 150%; */
     /* background-position: 40%; */
+    background-size: cover;
 }
 
 
@@ -97,24 +99,15 @@ html {
     padding-top: 30px;
     align-items: center;
 }
-.nav-symbol {
-    grid-column: 12/13;
-    display: none;
-    justify-content: flex-end;
-}
 
-.nav-symbol img {
-    width: 2em;
-    height: 2em;
-    filter: invert(1);
-
+.site-nav ul a:hover {
+    color: rgba(255, 255,255, 0.4)
 }
 
 .bw-logo {
     grid-column: span 2;
     max-width: 5em;
 }
-
 
 .site-nav ul {
     display: flex;
@@ -131,17 +124,39 @@ html {
 .front-page h1 {
     text-align: center;
     grid-column: 1/13;
-    padding-top: 100px;
     font-weight:600;
+    text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
+    margin-bottom: 30px;
+    /* border: 2px white solid; */
+    padding-top: 100px;
+
 }
 
-.front-page .button {
-    grid-column: 5/span 4;
+.button-hidden  {
+    grid-column: 1/13;
+justify-content: center;
+margin: 0 auto;}
+
+/* wdadwadwad */
+
+/* kl */
+
+
+.site-nav .button {
+    grid-column: 12/13;
     margin-top: 30px;
+    width: 80x;
+    margin: 0 auto;
 }
+
+.nav-button-hidden {
+    display: none;
+}
+
 
 .front-page-text:last-child {
-    padding-bottom: 160px;
+    padding-bottom: 200px;
+    align-items: center;
 }
 
 .schema-page {
@@ -152,17 +167,22 @@ html {
     font-weight:bolder;
     margin-bottom: 0;
     margin-top: 50px;
+    text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
+
 }
 .schema-page > p {
     margin-bottom: 10px;
     font-weight: 600;
     margin-top: 25px;
+    letter-spacing: 1.3px;
+    font-size: 1.2em;
 }
 
 .schema-page h2, .schema-page p, .faq-page h2, .faq-page p {
     grid-column: span 12;
     text-align: center;
     color: #101c43;
+
 }
 
 
@@ -190,6 +210,15 @@ text-align: center;
     gap: 15px;
 }
 
+.schema-page > :nth-child(3) {
+background-image: linear-gradient(to top right, #101a3c, #034078);
+    
+}
+
+.schedule-item:hover {
+    background-image: linear-gradient(to bottom right, #8c94b2, #466f97);
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.7);
+} 
 
 .schedule-item-img-text img{
     max-width: 110px;
@@ -208,27 +237,32 @@ text-align: center;
     text-align: center;
     font-weight: bolder;
     padding-top: 50px;
+    text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
 }
 
 .booking-page-container {
     grid-column: 1/13;
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.09);
     border-radius: 10px;
     margin-bottom: 90px;
-    padding: 40px 0;
+    padding: 0 0 40px 0;
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    /* max-width: 520px; */
 }
 
 .booking-page h3 {
     text-align: center;
+    margin-top: 30px;
 }
 
 
 .choice-container {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 35px;
+    margin-bottom: 20px;
 }
+
+.choice-container
 
 
 .choice-item {
@@ -269,9 +303,6 @@ text-align: center;
     display: flex;
 }
 
-
-
-
 .input-valid input:valid {
     margin-right: 15px;
 }
@@ -291,18 +322,30 @@ text-align: center;
     margin-bottom: 0;
 }
 
+.faq-flex-container {
+    grid-column: 1/13;
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 80px;
+}
+
+.faq-flex-container img {
+    width: 80%;
+    align-self: center;
+}
+
 .faq-page p {
     padding-bottom: 20px;
 }
-.faq-page img {
-grid-column: 1/13;
-width: 100%;
-padding-top: 60px;}
+
 
 .footer {
     /* background-image: linear-gradient(to top right, #0A1128, #034078); */
-background-image: url(assets/background/27532.jpg);
-margin-top: 40px;
+    background-image: url(assets/background/27532.jpg);
+    background-size: 150%;
+    background-position: 40%;
+    margin-top: 40px;
 }
 
 .footer p:first-child {
@@ -325,5 +368,140 @@ margin-top: 40px;
     align-self: center;
     margin: 0 auto;
     grid-row: 1;
-    padding: 40px 0;
+    padding:40px 0;
+} 
+
+/* Tablet */
+@media only screen and (min-width: 768px) {
+    .front-page h1 {
+        grid-column: 4/10;
+        padding-top: 120px;
+    }
+    .site-nav ul {
+        grid-column: 3/11; 
+        justify-content: center;
+    }
+
+    .site-nav ul a{
+        padding: 10px;
+    }
+
+
+    .grid {
+        padding: 0 40px;
+        gap: 1em;
+    }
+    .site-nav {
+        padding-top: 20px;
+
+    }
+    body {
+        font-size: 14px;
+    }
+   
+    .schedule-item {
+        grid-column: span 6;
+    }
+    
+        
+    .booking-page-container {
+        grid-column: 4/10;
+    
+    }
+    .faq-page img {
+        grid-column: 4/10;
+    }
+    .faq-page p {
+        padding-bottom: 20px;
+        grid-column: 3/11;
+    }
+    .front-page {
+        /* background-image: linear-gradient(to bottom right, #0A1128, #034078); */
+        background-image: url(assets/background/27532.jpg);
+        background-size: 100%;
+        background-position: 40%;
+    }
+    .faq-flex-container {
+        grid-column: 3/11;
+       
+    }
+    
+    .faq-flex-container img {
+        width: 50%;
+    }
+
+    .footer img {
+        width: 20%;
+        grid-column: 5/9;
+        align-self: center;
+        margin: 0 auto;
+        grid-row: 1;
+        padding:40px 0;
+    } 
+
+    .button-hidden  {
+        display: none;
+    }
+    .nav-button-hidden {
+        display: flex;
+grid-column: 12/13;    }
+
+   
+
+
+    
+
+}
+
+/* Desktop */
+@media only screen and (min-width: 1025px) {
+    body {
+        font-size: 16px;
+    }
+
+    .front-page h1 {
+        grid-column: 4/10;
+        padding-top: 165px;
+        padding-bottom: 50px;
+    }
+
+    .grid {
+        padding: 0 120px;   
+     }
+     .site-nav {
+        padding-top: 30px;
+    }
+
+
+
+  
+    .booking-page-container {
+        grid-column: 4/10;
+    }
+    .faq-flex-container {
+        grid-column: 3/11;
+        flex-direction: row;
+       
+    }
+    .faq-flex-container {
+        grid-column: 2/12;
+       
+    }
+
+   .faq-flex-container img {
+    order: 2;
+    width: 50%;
+    margin-left: 40px;  
+     }
+    
+    .faq-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;   
+    }
+    .footer {
+        margin-top: 150px;
+    }
+    
+   
 }
