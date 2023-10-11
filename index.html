@@ -8,219 +8,231 @@
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
-            href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800;900&display=swap"
             rel="stylesheet"
         />
+        <script type="text/javascript">
+            window.addEventListener("scroll", function () {
+                var nav = document.querySelector("nav");
+                nav.classList.toggle("sticky", window.scrollY > 0);
+            });
+        </script>
     </head>
     <body>
+        <nav class="site-nav grid">
+            <img
+                class="bw-logo white-display"
+                src="assets/Logos_and_symbols/battre-webb-logo-white.svg"
+                alt="logo of bättre webb"
+            />
+            <img
+                class="bw-logo blue-display"
+                src="assets/Logos_and_symbols/battre-webb-logo-blue.svg"
+                alt="logo of bättre webb"
+            />
+            <ul>
+                <li><a href="#schema">Schema</a></li>
+                <li><a href="#booking">Bokning</a></li>
+                <li><a href="#faq">FAQ</a></li>
+            </ul>
+            <div class="nav-button-hidden">
+                <a href="#booking" class="button">BOKA</a>
+            </div>
+        </nav>
         <div class="front-page">
-            <nav class="site-nav grid">
-                <img
-                    class="bw-logo"
-                    src="assets/Logos_and_symbols/bättre-webb-logo.svg"
-                    alt="logo of bättre webb"
-                />
-                <ul>
-                    <li><a href="#schema">SCHEMA</a></li>
-                    <li><a href="#booking">BOKNING</a></li>
-                    <li><a href="#faq">FAQ</a></li>
-                </ul>
-                <div class="nav-button-hidden">
-                    <a href="#booking" class="button">BOKA</a>
-                </div>
-            </nav>
-
             <section class="front-page-text grid">
-                <h1>Upptäck Framtidens Webbdesign på Bättre Webb</h1>
+                <h1>Upptäck Framtidens Webbdesign på <br />Bättre Webb</h1>
                 <div class="button-hidden">
                     <a href="#booking" class="button">Boka</a>
                 </div>
             </section>
         </div>
-        <div class="schema-page grid" id="schema">
-            <h2>SCHEMA</h2>
-            <p>Fredag 18 oktober</p>
-            <div class="schedule-item">
-                <div class="schedule-item-img-text">
-                    <img
-                        src="assets/profiles/company-img-1.png"
-                        alt="picture of conference profile"
-                    />
-                    <p>13.00-15.00</p>
-                    <p>Stora salen</p>
+        <div class="schema-page" id="schema">
+            <div class="grid">
+                <h2>SCHEMA</h2>
+                <p>Fredag 18 oktober</p>
+                <div class="schedule-item">
+                    <div class="schedule-item-img-text">
+                        <img
+                            src="assets/profiles/company-img-1.png"
+                            alt="picture of conference profile"
+                        />
+                        <p>13.00-15.00</p>
+                        <p>Stora salen</p>
+                    </div>
+                    <div class="schedule-item-text">
+                        <p><strong>WebCrafters</strong></p>
+                        <p>
+                            WebCrafters är en innovativ
+                            frontend-webbutvecklingsfirma med sätet i en
+                            pulserande digital värld. Vi är specialister.
+                        </p>
+                    </div>
                 </div>
-                <div class="schedule-item-text">
-                    <p><strong>WebCrafters</strong></p>
-                    <p>
-                        WebCrafters är en innovativ
-                        frontend-webbutvecklingsfirma med sätet i en pulserande
-                        digital värld. Vi är specialister.
-                    </p>
+                <div class="schedule-item">
+                    <div class="schedule-item-text">
+                        <p><strong>PixelWave</strong></p>
+                        <p>
+                            PixelWave Creations är en passionerad och kreativ
+                            frontend-utvecklingsbyrå med en stark hängivenhet
+                            till att skapa.
+                        </p>
+                    </div>
+                    <div class="schedule-item-img-text">
+                        <img
+                            src="assets/profiles/company-img-2.png"
+                            alt="picture of conference profile"
+                        />
+                        <p>15.30-18.00</p>
+                        <p>Stora salen</p>
+                    </div>
                 </div>
-            </div>
-            <div class="schedule-item">
-                <div class="schedule-item-text">
-                    <p><strong>PixelWave</strong></p>
-                    <p>
-                        PixelWave Creations är en passionerad och kreativ
-                        frontend-utvecklingsbyrå med en stark hängivenhet till
-                        att skapa.
-                    </p>
+                <div class="schedule-item">
+                    <div class="schedule-item-img-text">
+                        <img
+                            src="assets/profiles/company-img-3.png"
+                            alt="picture of conference profile"
+                        />
+                        <p>18.00-20.30</p>
+                        <p>Magnolia</p>
+                    </div>
+                    <div class="schedule-item-text">
+                        <p><strong>CreativeWeb Designs</strong></p>
+                        <p>
+                            CreativeWeb Designs är en nytänkande
+                            frontend-webbdesignbyrå dedikerad till att skapa
+                            visuellt imponerande.
+                        </p>
+                    </div>
                 </div>
-                <div class="schedule-item-img-text">
-                    <img
-                        src="assets/profiles/company-img-2.png"
-                        alt="picture of conference profile"
-                    />
-                    <p>15.30-18.00</p>
-                    <p>Stora salen</p>
+                <div class="schedule-item">
+                    <div class="schedule-item-text">
+                        <p><strong>PixelWave</strong></p>
+                        <p>
+                            PixelWave Creations är en passionerad och kreativ
+                            frontend-utvecklingsbyrå med en stark hängivenhet
+                            till att skapa.
+                        </p>
+                    </div>
+                    <div class="schedule-item-img-text">
+                        <img
+                            src="assets/profiles/company-img-2.png"
+                            alt="picture of conference profile"
+                        />
+                        <p>15.30-18.00</p>
+                        <p>Stora salen</p>
+                    </div>
                 </div>
-            </div>
-            <div class="schedule-item">
-                <div class="schedule-item-img-text">
-                    <img
-                        src="assets/profiles/company-img-3.png"
-                        alt="picture of conference profile"
-                    />
-                    <p>18.00-20.30</p>
-                    <p>Magnolia</p>
+                <p>Lördag 19 oktober</p>
+                <div class="schedule-item">
+                    <div class="schedule-item-img-text">
+                        <img
+                            src="assets/profiles/company-img-1.png"
+                            alt="picture of conference profile"
+                        />
+                        <p>13.00-15.00</p>
+                        <p>Stora salen</p>
+                    </div>
+                    <div class="schedule-item-text">
+                        <p><strong>WebCrafters</strong></p>
+                        <p>
+                            WebCrafters är en innovativ
+                            frontend-webbutvecklingsfirma med sätet i en
+                            pulserande digital värld. Vi är specialister.
+                        </p>
+                    </div>
                 </div>
-                <div class="schedule-item-text">
-                    <p><strong>CreativeWeb Designs</strong></p>
-                    <p>
-                        CreativeWeb Designs är en nytänkande
-                        frontend-webbdesignbyrå dedikerad till att skapa
-                        visuellt imponerande.
-                    </p>
+                <div class="schedule-item">
+                    <div class="schedule-item-text">
+                        <p><strong>PixelWave</strong></p>
+                        <p>
+                            PixelWave Creations är en passionerad och kreativ
+                            frontend-utvecklingsbyrå med en stark hängivenhet
+                            till att skapa.
+                        </p>
+                    </div>
+                    <div class="schedule-item-img-text">
+                        <img
+                            src="assets/profiles/company-img-2.png"
+                            alt="picture of conference profile"
+                        />
+                        <p>15.30-18.00</p>
+                        <p>Stora salen</p>
+                    </div>
                 </div>
-            </div>
-            <div class="schedule-item">
-                <div class="schedule-item-text">
-                    <p><strong>PixelWave</strong></p>
-                    <p>
-                        PixelWave Creations är en passionerad och kreativ
-                        frontend-utvecklingsbyrå med en stark hängivenhet till
-                        att skapa.
-                    </p>
+                <div class="schedule-item">
+                    <div class="schedule-item-img-text">
+                        <img
+                            src="assets/profiles/company-img-3.png"
+                            alt="picture of conference profile"
+                        />
+                        <p>18.00-20.30</p>
+                        <p>Magnolia</p>
+                    </div>
+                    <div class="schedule-item-text">
+                        <p><strong>CreativeWeb Designs</strong></p>
+                        <p>
+                            CreativeWeb Designs är en nytänkande
+                            frontend-webbdesignbyrå dedikerad till att skapa
+                            visuellt imponerande.
+                        </p>
+                    </div>
                 </div>
-                <div class="schedule-item-img-text">
-                    <img
-                        src="assets/profiles/company-img-2.png"
-                        alt="picture of conference profile"
-                    />
-                    <p>15.30-18.00</p>
-                    <p>Stora salen</p>
+                <div class="schedule-item">
+                    <div class="schedule-item-text">
+                        <p><strong>PixelWave</strong></p>
+                        <p>
+                            PixelWave Creations är en passionerad och kreativ
+                            frontend-utvecklingsbyrå med en stark hängivenhet
+                            till att skapa.
+                        </p>
+                    </div>
+                    <div class="schedule-item-img-text">
+                        <img
+                            src="assets/profiles/company-img-2.png"
+                            alt="picture of conference profile"
+                        />
+                        <p>15.30-18.00</p>
+                        <p>Stora salen</p>
+                    </div>
                 </div>
-            </div>
-            <p>Lördag 19 oktober</p>
-            <div class="schedule-item">
-                <div class="schedule-item-img-text">
-                    <img
-                        src="assets/profiles/company-img-1.png"
-                        alt="picture of conference profile"
-                    />
-                    <p>13.00-15.00</p>
-                    <p>Stora salen</p>
+                <p>Söndag 20 oktober</p>
+                <div class="schedule-item">
+                    <div class="schedule-item-img-text">
+                        <img
+                            src="assets/profiles/company-img-1.png"
+                            alt="picture of conference profile"
+                        />
+                        <p>13.00-15.00</p>
+                        <p>Stora salen</p>
+                    </div>
+                    <div class="schedule-item-text">
+                        <p><strong>WebCrafters</strong></p>
+                        <p>
+                            WebCrafters är en innovativ
+                            frontend-webbutvecklingsfirma med sätet i en
+                            pulserande digital värld. Vi är specialister.
+                        </p>
+                    </div>
                 </div>
-                <div class="schedule-item-text">
-                    <p><strong>WebCrafters</strong></p>
-                    <p>
-                        WebCrafters är en innovativ
-                        frontend-webbutvecklingsfirma med sätet i en pulserande
-                        digital värld. Vi är specialister.
-                    </p>
-                </div>
-            </div>
-            <div class="schedule-item">
-                <div class="schedule-item-text">
-                    <p><strong>PixelWave</strong></p>
-                    <p>
-                        PixelWave Creations är en passionerad och kreativ
-                        frontend-utvecklingsbyrå med en stark hängivenhet till
-                        att skapa.
-                    </p>
-                </div>
-                <div class="schedule-item-img-text">
-                    <img
-                        src="assets/profiles/company-img-2.png"
-                        alt="picture of conference profile"
-                    />
-                    <p>15.30-18.00</p>
-                    <p>Stora salen</p>
-                </div>
-            </div>
-            <div class="schedule-item">
-                <div class="schedule-item-img-text">
-                    <img
-                        src="assets/profiles/company-img-3.png"
-                        alt="picture of conference profile"
-                    />
-                    <p>18.00-20.30</p>
-                    <p>Magnolia</p>
-                </div>
-                <div class="schedule-item-text">
-                    <p><strong>CreativeWeb Designs</strong></p>
-                    <p>
-                        CreativeWeb Designs är en nytänkande
-                        frontend-webbdesignbyrå dedikerad till att skapa
-                        visuellt imponerande.
-                    </p>
-                </div>
-            </div>
-            <div class="schedule-item">
-                <div class="schedule-item-text">
-                    <p><strong>PixelWave</strong></p>
-                    <p>
-                        PixelWave Creations är en passionerad och kreativ
-                        frontend-utvecklingsbyrå med en stark hängivenhet till
-                        att skapa.
-                    </p>
-                </div>
-                <div class="schedule-item-img-text">
-                    <img
-                        src="assets/profiles/company-img-2.png"
-                        alt="picture of conference profile"
-                    />
-                    <p>15.30-18.00</p>
-                    <p>Stora salen</p>
-                </div>
-            </div>
-            <p>Söndag 20 oktober</p>
-            <div class="schedule-item">
-                <div class="schedule-item-img-text">
-                    <img
-                        src="assets/profiles/company-img-1.png"
-                        alt="picture of conference profile"
-                    />
-                    <p>13.00-15.00</p>
-                    <p>Stora salen</p>
-                </div>
-                <div class="schedule-item-text">
-                    <p><strong>WebCrafters</strong></p>
-                    <p>
-                        WebCrafters är en innovativ
-                        frontend-webbutvecklingsfirma med sätet i en pulserande
-                        digital värld. Vi är specialister.
-                    </p>
-                </div>
-            </div>
-            <div class="schedule-item">
-                <div class="schedule-item-text">
-                    <p><strong>PixelWave</strong></p>
-                    <p>
-                        PixelWave Creations är en passionerad och kreativ
-                        frontend-utvecklingsbyrå med en stark hängivenhet till
-                        att skapa.
-                    </p>
-                </div>
-                <div class="schedule-item-img-text">
-                    <img
-                        src="assets/profiles/company-img-2.png"
-                        alt="picture of conference profile"
-                    />
-                    <p>Tid: 15.30-18.00</p>
-                    <p>Plats: Stora salen</p>
-                    <p>Talare: Sam Smith</p>
+                <div class="schedule-item">
+                    <div class="schedule-item-text">
+                        <p><strong>PixelWave</strong></p>
+                        <p>
+                            PixelWave Creations är en passionerad och kreativ
+                            frontend-utvecklingsbyrå med en stark hängivenhet
+                            till att skapa.
+                        </p>
+                    </div>
+                    <div class="schedule-item-img-text">
+                        <img
+                            src="assets/profiles/company-img-2.png"
+                            alt="picture of conference profile"
+                        />
+                        <p>Tid: 15.30-18.00</p>
+                        <p>Plats: Stora salen</p>
+                        <p>Talare: Sam Smith</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -315,7 +327,7 @@
                             id="first"
                             type="text"
                             required
-                            placeholder="SKRIV DITT FÖRNAMN"
+                            placeholder="Skriv ditt förnamn"
                             value=""
                             pattern="[a-zA-Z]+"
                             title="Skriv in ditt namn utan siffror eller tecken."
@@ -325,7 +337,7 @@
                         <input
                             id="first"
                             type="text"
-                            placeholder="SKRIV DITT EFTERNAMN"
+                            placeholder="Skriv ditt efternamn"
                             value=""
                             required
                             pattern="[a-zA-Z]+"
@@ -335,7 +347,7 @@
                         <input
                             id="first"
                             type="text"
-                            placeholder="EPOST"
+                            placeholder="Skriv din E-post"
                             value=""
                             required
                             pattern="[a-zA-Z]+"
@@ -345,7 +357,7 @@
                         <input
                             id="first"
                             type="text"
-                            placeholder="TELEFONNUMMER"
+                            placeholder="Skriv ditt telefonnummer"
                             value=""
                             required
                             pattern="[0-9]+"
@@ -391,13 +403,24 @@
             </div>
         </div>
         <div class="footer grid">
-            <p>
-                Copyright 2023 <br />
-                Bättre Webb
-            </p>
-            <img src="assets/Logos_and_symbols/bättre-webb-logo.svg" alt="" />
-            <p>lorem lorem</p>
-            <!-- <a href="https://www.freepik.com/free-ai-image/blue-wallpaper-with-blue-background_40262626.htm#page=9&query=website%20background&position=43&from_view=search&track=ais">Image By Sketchepedia</a> -->
+            <div class="footer-text-left">
+                <p>Kontakta oss:</p>
+                <ul>
+                    <li>b-w@support.se</li>
+                    <li>074-245 23 42</li>
+                </ul>
+            </div>
+            <img
+                src="assets/Logos_and_symbols/battre-webb-logo-white.svg"
+                alt=""
+            />
+            <div class="footer-text-right">
+                <p>Background image by:</p>
+                <a
+                    href="https://www.freepik.com/free-ai-image/blue-wallpaper-with-blue-background_40262626.htm#page=9&query=website%20background&position=43&from_view=search&track=ais"
+                    ><p>Image By Sketchepedia</p></a
+                >
+            </div>
         </div>
     </body>
 </html>
