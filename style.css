@@ -125,7 +125,7 @@ body {
     background-image: none;
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.04);
     z-index: 1000;
-    transition: background-color 0.6s ease;
+    transition: background-color 1s ease;
 }
 
 .site-nav.sticky .white-display{
@@ -157,7 +157,7 @@ body {
 }
 
 .site-nav.sticky a {
-    color:#101a3c
+    color:#203064
 }
 .site-nav.sticky .button {
     color:#101a3c;
@@ -249,6 +249,8 @@ body {
 
 .schema-page .grid {
     padding-bottom: 100px;
+    /* max-width: 1200px;
+    margin: 0 auto; */
 }
 
 .schema-page h2 {
@@ -295,12 +297,15 @@ text-align: center;
     padding: 13px;
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.4);
     gap: 15px;
+    position: relative;
+    top: 0;
 }
 
 .schedule-item:hover {
-    background-image: linear-gradient(to top right, #162145, #034078);
+    background-image: linear-gradient(to top right, #165998, #a3a3f6 );
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.7);
-    transition: 0.5s;
+    transition:  0.1s;
+    top: -0.1em;
 } 
 
 .schedule-item-img-text img{
@@ -329,7 +334,8 @@ text-align: center;
     margin-bottom: 90px;
     padding: 0 0 40px 0;
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
-    /* max-width: 520px; */
+    /* max-width: 520px;
+    margin: 0 auto; */
 }
 
 .booking-page h3 {
@@ -479,6 +485,8 @@ text-align: center;
     .grid {
         padding: 0 40px;
         gap: 1em;
+        /* max-width: 1200px;
+    margin: 0 auto; */
     }
     .site-nav {
         padding-top: 10px;
@@ -502,6 +510,10 @@ text-align: center;
         display: flex;
         flex-direction: row;
     } */
+
+    .form-container {
+        padding: 0 50px;
+    }
     
     .booking-page-container {
         grid-column: 4/10;
@@ -543,7 +555,7 @@ text-align: center;
     }
     .nav-button-hidden {
         display: flex;
-    grid-column: 12/13;    }
+        grid-column: 12/13;    }
 }
 
 /* Desktop */
@@ -575,8 +587,17 @@ text-align: center;
     }
     .faq-flex-container {
         grid-column: 2/12;
-       
     }
+
+    /* .schedule-item {
+        grid-column: span 3;
+    } */
+
+    .form-container {
+        padding: 0 80px;
+    }
+
+   
 
    .faq-flex-container img {
     order: 2;
