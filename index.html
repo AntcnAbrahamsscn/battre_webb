@@ -11,12 +11,6 @@
             href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800;900&display=swap"
             rel="stylesheet"
         />
-        <script type="text/javascript">
-            window.addEventListener("scroll", function () {
-                var nav = document.querySelector("nav");
-                nav.classList.toggle("sticky", window.scrollY > 0);
-            });
-        </script>
     </head>
     <body>
         <nav class="site-nav grid">
@@ -32,8 +26,8 @@
             />
             <ul>
                 <li><a href="#schema">Program</a></li>
-                <li><a href="#booking">Om oss</a></li>
-                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#about">Om oss</a></li>
+                <li><a href="#faq-page">FAQ</a></li>
             </ul>
             <div class="nav-button-hidden">
                 <a href="#booking" class="button">BOKA</a>
@@ -41,16 +35,67 @@
         </nav>
         <div class="front-page">
             <section class="front-page-text grid">
-                <h1>Upptäck Framtidens Webbdesign på <br />Bättre Webb</h1>
+                <h1>Upptäck Framtidens Webbdesign på Bättre Webb</h1>
                 <div class="button-hidden">
                     <a href="#booking" class="button">Boka</a>
+                </div>
+            </section>
+        </div>
+
+        <div class="about-page" id="about">
+            <h2>Bättre Webb</h2>
+
+            <section class="grid">
+                <div class="about-text">
+                    <h3>Allmän information</h3>
+                    <p>
+                        Bättre Webb Expo är en årlig, spännande frontend-mässa
+                        som samlar experter, innovatörer och entusiaster inom
+                        webbutveckling för att utforska det senaste inom
+                        branschen och dela insikter om hur man skapar en bättre
+                        webb.
+                    </p>
+                </div>
+                <div class="about-text">
+                    <h3>Syfte</h3>
+                    <p>
+                        Mässans främsta syfte är att inspirera och främja
+                        framsteg inom frontend-utveckling och
+                        användarupplevelse. Den skapar en plattform där
+                        yrkesverksamma och entusiaster kan nätverka, lära sig av
+                        varandra och utforska de senaste tekniska framstegen.
+                    </p>
+                </div>
+                <div class="about-text">
+                    <h3>Nytt för iår</h3>
+                    <ul>
+                        <li>Hållbar Webbutveckling:</li>
+                        <p>
+                            Mässan har en stark betoning på hållbarhet och gröna
+                            teknologier.
+                        </p>
+                        <li>AI och Maskininlärning i Frontend:</li>
+                        <p>
+                            Mässan kommer att visa upp hur AI och maskininlärning kan användas för en
+                            förbättrad användarupplevelse.
+                        </p>
+                    </ul>
+                </div>
+                <div class="about-text">
+                    <h3>Årets line up:</h3>
+                    <p>
+                            WebWizards, PixelPerfect, DesignMasters,
+                            CodeCrafters, Interactive Innovators, Responsive
+                            Revolutions, User Interface Gurus, Frontend Fusion,
+                            Animation Architects & Mobile Masters
+                    </ul>
                 </div>
             </section>
         </div>
         <div class="schema-page" id="schema">
             <h2>Program</h2>
             <div class="grid">
-                <p>Fredag 20 oktober</p>
+                <h3>Fredag 20 oktober</h3>
                 <a href="#booking" class="schedule-item">
                     <div class="schedule-item-img-text">
                         <img
@@ -72,7 +117,7 @@
                     </div>
                 </a>
 
-                <div class="schedule-item">
+                <a href="#booking" class="schedule-item">
                     <div class="schedule-item-text">
                         <p><strong>PixelPerfect</strong></p>
                         <p>
@@ -91,8 +136,8 @@
                         <p>Plats: Magnolia</p>
                         <p>Talare: Will Willson</p>
                     </div>
-                </div>
-                <div class="schedule-item">
+                </a>
+                <a href="#booking" class="schedule-item">
                     <div class="schedule-item-img-text">
                         <img
                             src="assets/profiles/company-img-3.png"
@@ -111,8 +156,8 @@
                             appar.
                         </p>
                     </div>
-                </div>
-                <div class="schedule-item">
+                </a>
+                <a href="#booking" class="schedule-item">
                     <div class="schedule-item-text">
                         <p><strong>CodeCrafters</strong></p>
                         <p>
@@ -130,9 +175,9 @@
                         <p>Plats: Magnolia</p>
                         <p>Talare: Pat Patty</p>
                     </div>
-                </div>
-                <p>Lördag 21 oktober</p>
-                <div class="schedule-item">
+                </a>
+                <h3>Lördag 21 oktober</h3>
+                <a href="#booking" class="schedule-item">
                     <div class="schedule-item-img-text">
                         <img
                             src="assets/profiles/company-img-1.png"
@@ -151,8 +196,8 @@
                             användarupplevelse i frontend-utveckling.
                         </p>
                     </div>
-                </div>
-                <div class="schedule-item">
+                </a>
+                <a href="#booking" class="schedule-item">
                     <div class="schedule-item-text">
                         <p><strong>Responsive Revolutions</strong></p>
                         <p>
@@ -171,8 +216,8 @@
                         <p>Plats: Magnolia</p>
                         <p>Talare: Jim Jimmie</p>
                     </div>
-                </div>
-                <div class="schedule-item">
+                </a>
+                <a href="#booking" class="schedule-item">
                     <div class="schedule-item-img-text">
                         <img
                             src="assets/profiles/company-img-3.png"
@@ -190,8 +235,8 @@
                             utforska UX-design och användarcentrerade metoder.
                         </p>
                     </div>
-                </div>
-                <div class="schedule-item">
+                </a>
+                <a href="#booking" class="schedule-item">
                     <div class="schedule-item-text">
                         <p><strong>Frontend Fusion</strong></p>
                         <p>
@@ -210,9 +255,9 @@
                         <p>Plats: Magnolia</p>
                         <p>Talare: Tim Tom</p>
                     </div>
-                </div>
-                <p>Söndag 22 oktober</p>
-                <div class="schedule-item">
+                </a>
+                <h3>Söndag 22 oktober</h3>
+                <a href="#booking" class="schedule-item">
                     <div class="schedule-item-img-text">
                         <img
                             src="assets/profiles/company-img-1.png"
@@ -231,8 +276,8 @@
                             frontend-design.
                         </p>
                     </div>
-                </div>
-                <div class="schedule-item">
+                </a>
+                <a href="#booking" class="schedule-item">
                     <div class="schedule-item-text">
                         <p><strong>Mobile Masters</strong></p>
                         <p>
@@ -251,7 +296,7 @@
                         <p>Plats: Magnolia</p>
                         <p>Talare: Six Sax</p>
                     </div>
-                </div>
+                </a>
             </div>
         </div>
         <div class="booking-page grid" id="booking">
@@ -262,7 +307,7 @@
                     <div class="choice-container">
                         <div class="choice-item">
                             <input
-                                type="radio"
+                                type="checkbox"
                                 id="food-choice-1"
                                 name="ticket-option"
                             />
@@ -270,7 +315,7 @@
                         </div>
                         <div class="choice-item">
                             <input
-                                type="radio"
+                                type="checkbox"
                                 id="food-choice-2"
                                 name="ticket-option"
                             />
@@ -278,7 +323,7 @@
                         </div>
                         <div class="choice-item">
                             <input
-                                type="radio"
+                                type="checkbox"
                                 id="food-choice-3"
                                 name="ticket-option"
                             />
@@ -286,7 +331,7 @@
                         </div>
                         <div class="choice-item">
                             <input
-                                type="radio"
+                                type="checkbox"
                                 id="food-choice-4"
                                 name="ticket-option"
                             />
@@ -301,7 +346,7 @@
                                 id="food-choice-1"
                                 name="food-option"
                             />
-                            <label for="food-choice-1">Kassler</label>
+                            <label for="food-choice-1">Kött</label>
                         </div>
                         <div class="choice-item">
                             <input
@@ -317,7 +362,7 @@
                                 id="food-choice-3"
                                 name="food-option"
                             />
-                            <label for="food-choice-3">Vegetarisk</label>
+                            <label for="food-choice-3">Kyckling</label>
                         </div>
                         <div class="choice-item">
                             <input
@@ -325,15 +370,16 @@
                                 id="food-choice-3"
                                 name="food-option"
                             />
-                            <label for="food-choice-3">Thai</label>
+                            <label for="food-choice-3">Vegetarisk</label>
                         </div>
                     </div>
                     <div class="input-valid">
                         <input
                             id="first"
                             type="text"
-                            required
                             placeholder="Allergier"
+                            required
+                            minlength="2"
                             value=""
                             pattern="[a-zA-Z]+"
                             title="Skriv in ditt namn utan siffror eller tecken."
@@ -394,29 +440,47 @@
                 </form>
             </section>
         </div>
-        <div class="faq-page grid" id="faq">
-            <div class="faq-flex-container">
+        <div class="faq-page" id="faq-page">
+            <h2>FAQ</h2>
+            <div class="grid">
                 <img
-                    src="assets/Logos_and_symbols/anton-profile-circle.png"
-                    alt="picture of bw-company"
+                    src="assets/Logos_and_symbols/battre-webb-about-us.png"
+                    alt="picture of bättre webb conference"
                 />
-                <section class="faq-text">
-                    <h2>FAQ</h2>
+                <div class="faq-item">
+                    <h3>Fråga 1: Vad är "Bättre Webb" Frontend-mässan?</h3>
                     <p>
-                        Bättre Webb Expo är en årlig, spännande frontend-mässa
-                        som samlar experter, innovatörer och entusiaster inom
-                        webbutveckling för att utforska det senaste inom
-                        branschen och dela insikter om hur man skapar en bättre
-                        webb.
+                        Svar: "Bättre Webb" är en årlig frontend-mässa som
+                        fokuserar på de senaste trenderna och innovationerna
+                        inom webbutveckling och design. Det är en mötesplats för
+                        utvecklare, designers och webbentusiaster.
                     </p>
+                </div>
+                <div class="faq-item">
+                    <h3>
+                        Fråga 2: När och var äger "Bättre Webb" Frontend-mässan
+                        rum?
+                    </h3>
                     <p>
-                        Mässans främsta syfte är att inspirera och främja
-                        framsteg inom frontend-utveckling och
-                        användarupplevelse. Den skapar en plattform där
-                        yrkesverksamma och entusiaster kan nätverka, lära sig av
-                        varandra och utforska de senaste tekniska framstegen.
+                        Svar: Mässan äger rum från den 20:e till den 22:a oktober. Den exakta platsen varierar från år till år, så kontrollera den officiella webbplatsen för den aktuella adressen.
                     </p>
-                </section>
+                </div>
+                <div class="faq-item">
+                    <h3>
+                        Fråga 3: Vilka är de huvudsakliga temana för "Bättre Webb" i år?
+                    </h3>
+                    <p>
+                        Svar: Årets "Bättre Webb" kommer att fokusera på de senaste webbutvecklingstrenderna, inklusive Webb3.0-teknologier, hållbar webbutveckling och responsiv design.
+                    </p>
+                </div>
+                <div class="faq-item">
+                    <h3>
+                        Fråga 4: Måste jag registrera mig för att delta i mässan?
+                    </h3>
+                    <p>
+                        Svar: Ja, du måste registrera dig för att delta i mässan. Registreringen kan vanligtvis göras på plats eller online via den officiella webbplatsen.
+                    </p>
+                </div>
             </div>
         </div>
         <div class="footer grid">
@@ -432,12 +496,29 @@
                 alt=""
             />
             <div class="footer-text-right">
-                <p>Background image by:</p>
                 <a
                     href="https://www.freepik.com/free-ai-image/blue-wallpaper-with-blue-background_40262626.htm#page=9&query=website%20background&position=43&from_view=search&track=ais"
-                    ><p>Image By Sketchepedia</p></a
+                    ><p>Background image By Sketchepedia</p></a
                 >
+                <p>
+                    FAQ Photo by
+                    <a
+                        href="https://unsplash.com/@terrenhurst?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+                        >Terren Hurst</a
+                    >
+                    on
+                    <a
+                        href="https://unsplash.com/photos/blgOFmPIlr0?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+                        >Unsplash</a
+                    >
+                </p>
             </div>
         </div>
+        <script type="text/javascript">
+            window.addEventListener("scroll", function () {
+                var nav = document.querySelector("nav");
+                nav.classList.toggle("sticky", window.scrollY > 0);
+            });
+        </script>
     </body>
 </html>

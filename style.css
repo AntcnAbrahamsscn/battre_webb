@@ -239,7 +239,7 @@ body {
 
 
 .front-page-text:last-child {
-    padding-bottom: 140px;
+    padding-bottom: 160px;
     align-items: center;
 }
 
@@ -253,13 +253,29 @@ body {
     margin: 0 auto; */
 }
 
-.schema-page h2 {
+.schema-page h2, .about-page h2, .faq-page h2 {
     font-weight:bolder;
     margin-bottom: 0;
+    margin-top: 0;
     padding-top: 50px;
     text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
-
 }
+
+.about-page h3, .schema-page h3, .faq-page h3 {
+    color: #101c43;
+    grid-column: span 12;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.about-page ul li {
+    color:
+}
+
+.about-text {
+    grid-column: span 12;
+}
+
 .schema-page > p {
     margin-bottom: 10px;
     font-weight: 600;
@@ -268,11 +284,10 @@ body {
     font-size: 1.2em;
 }
 
-.schema-page h2, .schema-page p, .faq-page h2, .faq-page p {
+.schema-page h2, .schema-page p, .about-page h2, .about-page p, .about-page h2, .about-page p, .about-page ul li, .faq-page h2, .faq-page p {
     grid-column: span 12;
     text-align: center;
     color: #101c43;
-
 }
 
 .schedule-item p {
@@ -377,19 +392,18 @@ text-align: center;
     flex-grow: 1;
 }
 
-
-
-
 .input-valid {
     height: 26px;
     border-radius: 50px;
     margin: 5px 0;
-    background-image: linear-gradient(to right, #000000,#000000,#000000,#000000,#000000,#000000,#000000, #037838);
+    background-image: linear-gradient(to right, #000000,#000000,#000000, #037838);
     display: flex;
+    /* transition: 2s; */
 }
 
 .input-valid input:valid {
     margin-right: 15px;
+    /* border-right: #037838 10px solid; */
 }
 
 .booking-page p {
@@ -400,34 +414,57 @@ text-align: center;
 .form-end-text {
     margin-top: 20px;
 }
-.faq-page {
+.about-page {
     background-color: white;
 }
 
-.faq-page h2 {
+.about-page h2 {
     font-weight: bolder;
     margin-bottom: 0;
+    margin-top: 40px;
 }
 
-.faq-flex-container {
+.about-flex-container {
     grid-column: 1/13;
     align-content: center;
     display: flex;
     flex-direction: column;
-    margin-top: 80px;
-    padding-bottom: 100px;
+    margin-top: 20px;
+    padding-bottom: 40px;
 }
 
-.faq-flex-container img {
-    width: 80%;
-    align-self: center;
-}
 
-.faq-page p {
+.about-page p {
     padding-bottom: 20px;
 }
 
+.faq-page {
+    background-color: white;
+}
+.faq-item {
+    grid-column: span 12;
+}
+.faq-page .grid {
+    padding-bottom: 100px;
+}
 
+.faq-page img {
+    grid-column: span 12;
+    width: 80%;
+    padding-bottom: 20px;
+    margin: 0 auto;}
+
+.faq-page h2 {
+    padding-bottom: 30px;
+}
+
+
+.faq-page ul {
+    padding-bottom: 60px;
+}
+.faq-page li {
+    margin-top: 10px;
+}
 
 
 .footer {
@@ -449,7 +486,7 @@ text-align: center;
 }
 
 .footer-text-right {
-    grid-column: 9/13;
+    grid-column: 8/13;
     text-align: end;
     grid-row: 1;
     align-self: center;
@@ -468,7 +505,8 @@ text-align: center;
 @media only screen and (min-width: 768px) {
     .front-page h1 {
         grid-column: 4/10;
-        padding-top: 30px;
+        padding-top: 140px;
+        /* padding-bottom: 100px; */
     }
     .site-nav ul {
         grid-column: 3/11; 
@@ -501,15 +539,17 @@ text-align: center;
     body {
         font-size: 14px;
     }
+    .about-text {
+        grid-column: span 6;
+        padding-bottom: 30px;
+    }
+    .about-page h2 {
+        padding-bottom: 40px;
+    }
    
     .schedule-item {
         grid-column: span 6;
     }
-    /* .schema-page .grid {
-        padding-bottom: 100px;
-        display: flex;
-        flex-direction: row;
-    } */
 
     .form-container {
         padding: 0 50px;
@@ -519,27 +559,37 @@ text-align: center;
         grid-column: 4/10;
     
     }
+
+    .faq-item {
+        grid-column: span 6;
+        align-self: center;
+    }
+.faq-page .grid div:nth-child(2) {
+    grid-row: 1/2;
+}
+.faq-page .grid img:first-child {
+    grid-row: span 2;
+
+}
+.faq-page .grid div:last-child {
+    grid-column: span 6;
+    align-self: center;
+}
+
     .faq-page img {
-        grid-column: 4/10;
+        grid-column: span 6;
+        /* align-self: center; */
+        width: 70%;
     }
-    .faq-page p {
-        padding-bottom: 20px;
-        grid-column: 3/11;
-    }
+
+    /* .faq-page .grid:nth-child(6,7) */
     .front-page {
         /* background-image: linear-gradient(to bottom right, #0A1128, #034078); */
         background-image: url(assets/background/blue-wallpaper-with-blue-background.jpg);
         background-size: 100%;
         background-position: 40%;
     }
-    .faq-flex-container {
-        grid-column: 3/11;
-       
-    }
-    
-    .faq-flex-container img {
-        width: 50%;
-    }
+   
 
     .footer img {
         width: 10%;
@@ -567,7 +617,7 @@ text-align: center;
     .front-page h1 {
         grid-column: 4/10;
         padding-top: 220px;
-        padding-bottom: 80px;
+        padding-bottom: 100px;
     }
 
     .grid {
@@ -578,16 +628,9 @@ text-align: center;
         padding-bottom: 10px;
     }
     .booking-page-container {
-        grid-column: 4/10;
-    }
-    .faq-flex-container {
         grid-column: 3/11;
-        flex-direction: row;
-       
     }
-    .faq-flex-container {
-        grid-column: 2/12;
-    }
+  
 
     /* .schedule-item {
         grid-column: span 3;
@@ -597,19 +640,7 @@ text-align: center;
         padding: 0 80px;
     }
 
-   
-
-   .faq-flex-container img {
-    order: 2;
-    width: 50%;
-    margin-left: 40px;  
-     }
     
-    .faq-text {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;   
-    }
 
     
    
