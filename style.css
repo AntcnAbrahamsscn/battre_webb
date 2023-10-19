@@ -65,7 +65,7 @@ h3 {
     text-align: center;
 }
 
-.button:hover {
+.button:hover, .button.active {
     color: #231942;
     background: #fff;
     transition: 0.1s;
@@ -74,7 +74,6 @@ h3 {
 
 html {
     scroll-behavior: smooth;
-
 }
 
 body {
@@ -84,8 +83,8 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    
 }
+
 /* Mobile version */
 .front-page {
     /* background-image: linear-gradient(to bottom right, #0A1128, #034078); */
@@ -268,9 +267,6 @@ body {
     margin-bottom: 0;
 }
 
-.about-page ul li {
-    color:
-}
 
 .about-text {
     grid-column: span 12;
@@ -392,6 +388,8 @@ text-align: center;
     flex-grow: 1;
 }
 
+
+
 .input-valid {
     height: 26px;
     border-radius: 50px;
@@ -414,6 +412,11 @@ text-align: center;
 .form-end-text {
     margin-top: 20px;
 }
+
+.allergier input:placeholder-shown {
+    margin-right: 0;
+}
+
 .about-page {
     background-color: white;
 }
@@ -450,7 +453,7 @@ text-align: center;
 
 .faq-page img {
     grid-column: span 12;
-    width: 80%;
+    width: 70%;
     padding-bottom: 20px;
     margin: 0 auto;}
 
@@ -621,7 +624,7 @@ text-align: center;
     }
 
     .grid {
-        padding: 0 120px;   
+        padding: 0 180px;   
      }
      .site-nav {
         padding-top: 10px;
@@ -629,6 +632,9 @@ text-align: center;
     }
     .booking-page-container {
         grid-column: 3/11;
+        max-width: 700px;
+        margin: 0 auto 100px auto;
+
     }
   
 
