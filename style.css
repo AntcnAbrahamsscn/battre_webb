@@ -65,11 +65,10 @@ h3 {
     text-align: center;
 }
 
-.button:hover, .button.active {
+.button:hover {
     color: #231942;
     background: #fff;
     transition: 0.1s;
-
 }
 
 html {
@@ -87,8 +86,6 @@ body {
 
 /* Mobile version */
 .front-page {
-    /* background-image: linear-gradient(to bottom right, #0A1128, #034078); */
-    /* background-image: url(assets/background/27532.jpg); */
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
@@ -227,7 +224,6 @@ body {
     margin: 0 auto;}
 
 .site-nav .button {
-    /* grid-column: 12/13; */
     margin-top: 30px;
     width: 80x;
     margin: 0 auto;}
@@ -248,8 +244,6 @@ body {
 
 .schema-page .grid {
     padding-bottom: 100px;
-    /* max-width: 1200px;
-    margin: 0 auto; */
 }
 
 .schema-page h2, .about-page h2, .faq-page h2 {
@@ -297,10 +291,8 @@ text-align: center;
 
 .schedule-item {
     grid-column: span 12;
-    /* border: #D81E5B 2px solid; */
     border-radius: 4px;
     background-image: linear-gradient(to bottom right, #101a3c, #034078);
-    /* background-image: url(assets/background/background-fp.jpg); */
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -316,7 +308,7 @@ text-align: center;
     background-image: linear-gradient(to top right, #165998, #a3a3f6 );
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.7);
     transition:  0.1s;
-    top: -0.1em;
+    top: 0.1em;
 } 
 
 .schedule-item-img-text img{
@@ -326,8 +318,6 @@ text-align: center;
 
 .booking-page {
     background-image: linear-gradient(to bottom right, #0A1128, #034078);
-    /* background-image: url(assets/background/blue-wallpaper-with-blue-background.jpg);  */
-    /* background-position: 40%; */
 }
 
 .booking-page h2{
@@ -345,8 +335,6 @@ text-align: center;
     margin-bottom: 90px;
     padding: 0 0 40px 0;
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
-    /* max-width: 520px;
-    margin: 0 auto; */
 }
 
 .booking-page h3 {
@@ -383,7 +371,6 @@ text-align: center;
 .booking-page input {
     border-radius: 50px;
     border: white;
-    /* padding: 5px 128px 5px 10px; */
     padding: 5px 5px 5px 10px;
     flex-grow: 1;
 }
@@ -396,12 +383,10 @@ text-align: center;
     margin: 5px 0;
     background-image: linear-gradient(to right, #000000,#000000,#000000, #037838);
     display: flex;
-    /* transition: 2s; */
 }
 
 .input-valid input:valid {
     margin-right: 15px;
-    /* border-right: #037838 10px solid; */
 }
 
 .booking-page p {
@@ -471,13 +456,11 @@ text-align: center;
 
 
 .footer {
-    /* background-image: linear-gradient(to top right, #0A1128, #034078); */
     background-image: url(assets/background/blue-wallpaper-with-blue-background.jpg);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    /* margin-top: 40px; */
     font-size: 12px;
 }
 
@@ -501,7 +484,7 @@ text-align: center;
     align-self: center;
     margin: 0 auto;
     grid-row: 1;
-    padding:20px 0;
+    padding:30px 0;
 } 
 
 /* Tablet */
@@ -509,7 +492,6 @@ text-align: center;
     .front-page h1 {
         grid-column: 4/10;
         padding-top: 140px;
-        /* padding-bottom: 100px; */
     }
     .site-nav ul {
         grid-column: 3/11; 
@@ -526,8 +508,7 @@ text-align: center;
     .grid {
         padding: 0 40px;
         gap: 1em;
-        /* max-width: 1200px;
-    margin: 0 auto; */
+       
     }
     .site-nav {
         padding-top: 10px;
@@ -567,33 +548,29 @@ text-align: center;
         grid-column: span 6;
         align-self: center;
     }
-.faq-page .grid div:nth-child(2) {
+    .faq-page .grid div:nth-child(2) {
     grid-row: 1/2;
-}
-.faq-page .grid img:first-child {
+    }
+    .faq-page .grid img:first-child {
     grid-row: span 2;
 
-}
-.faq-page .grid div:last-child {
+    }
+    .faq-page .grid div:last-child {
     grid-column: span 6;
     align-self: center;
-}
+    }
 
     .faq-page img {
         grid-column: span 6;
-        /* align-self: center; */
         width: 70%;
     }
 
-    /* .faq-page .grid:nth-child(6,7) */
     .front-page {
-        /* background-image: linear-gradient(to bottom right, #0A1128, #034078); */
         background-image: url(assets/background/blue-wallpaper-with-blue-background.jpg);
         background-size: 100%;
         background-position: 40%;
     }
    
-
     .footer img {
         width: 10%;
         grid-column: 5/9;
@@ -620,7 +597,7 @@ text-align: center;
     .front-page h1 {
         grid-column: 4/10;
         padding-top: 220px;
-        padding-bottom: 100px;
+        padding-bottom: 80px;
     }
 
     .grid {
@@ -634,20 +611,26 @@ text-align: center;
         grid-column: 3/11;
         max-width: 700px;
         margin: 0 auto 100px auto;
-
     }
-  
 
-    /* .schedule-item {
-        grid-column: span 3;
-    } */
+    .about-page h2 {
+        padding-top: 100px;
+    }
+
+    .about-page .grid {
+        padding-bottom: 80px;
+    }
 
     .form-container {
         padding: 0 80px;
     }
+    .footer img {
+        padding:40px 0;
+        width: 20%;
+    } 
 
-    
+    .faq-page h2 {
+        padding-top: 100px;
+    }
 
-    
-   
 }
